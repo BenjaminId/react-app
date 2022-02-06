@@ -1,0 +1,11 @@
+{
+  "AWSEBDockerrunVersion": "1",
+ "Image": {
+    "Name": "901607109657.dkr.ecr.us-east-2.amazonaws.com/react2:latest"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ]
+}
