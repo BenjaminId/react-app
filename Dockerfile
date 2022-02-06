@@ -1,4 +1,4 @@
-FROM node:14.6 as build
+FROM boi0487/node:v1 as build
 
 WORKDIR /app
 
@@ -10,6 +10,6 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:alpine
+FROM boi0487/node:v1
 
 COPY --from=build /app/build /usr/share/nginx/html/
